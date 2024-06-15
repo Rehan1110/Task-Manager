@@ -22,7 +22,11 @@ mongoose.connect(MONGO_URL)
         })
         .catch((err) => console.log(err));
 
+    
 
+    app.get("/",(req, res) => {
+      res.render("Hello Rehan Abbas");
+    });
     app.use("/api", route);    
   
 
