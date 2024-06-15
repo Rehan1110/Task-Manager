@@ -25,7 +25,7 @@ mongoose.connect(MONGO_URL)
     
 
     app.get("/",(req, res) => {
-      res.render("Hello Rehan Abbas");
+      res.send("Hello Rehan Abbas");
     });
     app.use("/api", route);    
   
